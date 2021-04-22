@@ -2,29 +2,32 @@
   <div id="app">
     <div class="page">
       <div id="menu">
-        <div id="brand">
-          <router-link to="/">
-            <img src="/images/logo.png">
-          </router-link>
-        </div>
         <div id="side">
-          <router-link to="/browse">
-            <div class="menu-item browse">
-              <img src="/images/globe.png">
-              <p>Browse</p>
+          <router-link to="/">
+            <div class="menu-item">
+              <p>Home</p>
             </div>
           </router-link>
-          <router-link to="/cart">
+          <router-link to="/about">
             <div class="menu-item">
-              <img src="/images/love.png">
-              <p>0 items</p>
+              <p>About</p>
+            </div>
+          </router-link>
+          <router-link to="/login">
+            <div class="menu-item">
+              <p>Login</p>
+            </div>
+          </router-link>
+          <router-link to="/admin">
+            <div class="menu-item">
+              <p>Administration</p>
             </div>
           </router-link>
         </div>
       </div>
       <router-view />
     </div>
-    <div class=footer><a href=https://github.com/BYU-CS-260-Winter-2021/lab-3b-grocery-store-hotapplecereal>Github Repository</a></div>
+    <div class=footer><a href=https://github.com/hotapplecereal/final>Github Repository</a> 4 hours</div>
   </div>
 </template>
 
