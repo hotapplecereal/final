@@ -1,10 +1,30 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="page">
+      <div id="menu">
+        <div id="brand">
+          <router-link to="/">
+            <img src="/images/logo.png">
+          </router-link>
+        </div>
+        <div id="side">
+          <router-link to="/browse">
+            <div class="menu-item browse">
+              <img src="/images/globe.png">
+              <p>Browse</p>
+            </div>
+          </router-link>
+          <router-link to="/cart">
+            <div class="menu-item">
+              <img src="/images/love.png">
+              <p>0 items</p>
+            </div>
+          </router-link>
+        </div>
+      </div>
+      <router-view />
     </div>
-    <router-view />
+    <div class=footer><a href=https://github.com/BYU-CS-260-Winter-2021/lab-3b-grocery-store-hotapplecereal>Github Repository</a></div>
   </div>
 </template>
 
